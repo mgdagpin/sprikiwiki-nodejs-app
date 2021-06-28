@@ -1,12 +1,29 @@
-var http = require('http');
+// const express = require('express');
+// const app = express();
+// const PORT = 8000;
 
-function onRequest(request, response) {
-    response.writeHead(200, {
-        'Content-Type': 'text/plain'
-    });
+// app.use(express.json());
 
-    response.write('Hey Man!');
-    response.end();
-}
+// app.get('/hi', (req, res) => {
+//     res.status(200).send({
+//         say: 'Hey man!'
+//     })
+// })
 
-http.createServer(onRequest).listen(8000);
+// app.post('/agecalc/', (req, res) => {
+//     const { year } = req.body;
+//     const currentYear = new Date().getFullYear();
+
+//     if(!year) {
+//         res.status(418).send({ message: 'Nan' })
+//     }
+
+//     res.send({
+//         your_age: currentYear - year
+//     })
+
+// })
+
+// app.listen(PORT, () => {
+//     console.log('It work go to http://localhost:'+PORT)
+// })
